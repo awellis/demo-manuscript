@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>demo-manuscript</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-2788-936X</contrib-id>
+          <name>
+            <surname>Ellis</surname>
+            <given-names>Andrew</given-names>
+          </name>
+          <string-name>Andrew Ellis</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+          <xref ref-type="corresp" rid="cor-1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1">
+        <institution-wrap>
+          <institution>Virtual Academy, Bern University of Applied
+Sciences</institution>
+        </institution-wrap>
+        <ext-link ext-link-type="uri" xlink:href="https://virtuelleakademie.ch">https://virtuelleakademie.ch</ext-link>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1"/>
+      </author-notes>
+      <history/>
+      <permissions>
+        <license license-type="creative-commons">
+          <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+        </license>
+      </permissions>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="section">
+      <title>Section</title>
+      <p>This is a simple placeholder for the manuscript’s main document
+  (<xref alt="Knuth 1984" rid="ref-knuth84" ref-type="bibr">Knuth
+  1984</xref>).</p>
+    </sec>
+    <sec id="function">
+      <title>Function</title>
+      <p>Let’s create a Python function to add two floating point numbers.
+  The code will be visible in the
+  <monospace>Source: Article Notebook</monospace></p>
+      <p>We can use the function to compute <inline-formula><alternatives><tex-math><![CDATA[4+5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>4</mml:mn><mml:mo>+</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
+  and return the output:</p>
+      <preformat>The result is: 9</preformat>
+    </sec>
+    <sec id="figure">
+      <title>Figure</title>
+      <p>Here is a figure:</p>
+      <fig id="fig-polar">
+        <caption>
+          <p>Figure 1: A line plot on a polar axis</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-polar-output-1.png"/>
+      </fig>
+    </sec>
+    <sec id="equation">
+      <title>Equation</title>
+      <p>Let <inline-formula><alternatives><tex-math><![CDATA[x]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  denote the number of eruptions in a year. Then,
+  <inline-formula><alternatives><tex-math><![CDATA[x]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  can be modeled by a Poisson distribution</p>
+      <p>
+        <styled-content id="eq-poisson">
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+  p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+   \qquad(1)]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:mi>p</mml:mi>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:mi>x</mml:mi>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mfrac>
+                    <mml:mrow>
+                      <mml:msup>
+                        <mml:mi>e</mml:mi>
+                        <mml:mrow>
+                          <mml:mi>−</mml:mi>
+                          <mml:mi>λ</mml:mi>
+                        </mml:mrow>
+                      </mml:msup>
+                      <mml:msup>
+                        <mml:mi>λ</mml:mi>
+                        <mml:mi>x</mml:mi>
+                      </mml:msup>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mi>x</mml:mi>
+                      <mml:mi>!</mml:mi>
+                    </mml:mrow>
+                  </mml:mfrac>
+                  <mml:mspace width="2.0em"/>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:mn>1</mml:mn>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </styled-content>
+      </p>
+      <p>where <inline-formula><alternatives><tex-math><![CDATA[\lambda]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
+  is the rate of eruptions per year. Using
+  <xref alt="Equation 1" rid="eq-poisson">Equation 1</xref>, the
+  probability of an eruption in the next <inline-formula><alternatives><tex-math><![CDATA[t]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
+  years can be calculated.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title/>
+      <ref id="ref-knuth84">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Knuth</surname>
+              <given-names>Donald E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Literate programming</article-title>
+          <source>Comput. J.</source>
+          <publisher-name>Oxford University Press, Inc.</publisher-name>
+          <publisher-loc>USA</publisher-loc>
+          <year iso-8601-date="1984-05">1984</year>
+          <month>05</month>
+          <volume>27</volume>
+          <issue>2</issue>
+          <issn>0010-4620</issn>
+          <uri>https://doi.org/10.1093/comjnl/27.2.97</uri>
+          <pub-id pub-id-type="doi">10.1093/comjnl/27.2.97</pub-id>
+          <fpage>97</fpage>
+          <lpage>111</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <sub-article article-type="notebook" id="nb-4-nb-article">
+    <front-stub>
+      <title-group>
+        <article-title>demo-manuscript</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-2788-936X</contrib-id>
+          <name>
+            <surname>Ellis</surname>
+            <given-names>Andrew</given-names>
+          </name>
+          <string-name>Andrew Ellis</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+          <xref ref-type="corresp" rid="cor-1-nb-article">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1-nb-article">
+        <institution-wrap>
+          <institution>Virtual Academy, Bern University of Applied
+Sciences</institution>
+        </institution-wrap>
+        <ext-link ext-link-type="uri" xlink:href="https://virtuelleakademie.ch">https://virtuelleakademie.ch</ext-link>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1-nb-article"/>
+      </author-notes>
+    </front-stub>
+    <body>
+      <sec id="section-nb-article">
+        <title>Section</title>
+        <p>This is a simple placeholder for the manuscript’s main document
+  (<xref alt="Knuth 1984" rid="ref-knuth84-nb-article" ref-type="bibr">Knuth
+  1984</xref>).</p>
+      </sec>
+      <sec id="function-nb-article">
+        <title>Function</title>
+        <p>Let’s create a Python function to add two floating point numbers.
+  The code will be visible in the
+  <monospace>Source: Article Notebook</monospace></p>
+        <sec id="d298c784-nb-article" specific-use="notebook-content">
+          <code language="python">def add(x: float, y: float) -&gt; float:
+    z = x + y
+    print(f"The result is: {z}")
+    return z</code>
+        </sec>
+        <sec id="d9cbe0a5-nb-article" specific-use="notebook-content">
+          <p>We can use the function to compute <inline-formula><alternatives><tex-math><![CDATA[4+5]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>4</mml:mn><mml:mo>+</mml:mo><mml:mn>5</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
+  and return the output:</p>
+        </sec>
+        <sec id="a2dc470a-nb-article" specific-use="notebook-content">
+          <code language="python">z = add(5, 4)</code>
+          <boxed-text>
+            <preformat>The result is: 9</preformat>
+          </boxed-text>
+        </sec>
+        <sec id="db8edc59-nb-article" specific-use="notebook-content">
+</sec>
+        <sec id="figure-nb-article">
+          <title>Figure</title>
+          <p>Here is a figure:</p>
+        </sec>
+        <sec id="cell-fig-polar-nb-article" specific-use="notebook-content">
+          <code language="python">import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()</code>
+          <boxed-text>
+            <fig id="fig-polar-nb-article">
+              <caption>
+                <p>Figure 1: A line plot on a polar axis</p>
+              </caption>
+              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-polar-output-1.png"/>
+            </fig>
+          </boxed-text>
+        </sec>
+        <sec id="cell-2b39b4ab-nb-article" specific-use="notebook-content">
+</sec>
+        <sec id="equation-nb-article">
+          <title>Equation</title>
+          <p>Let <inline-formula><alternatives><tex-math><![CDATA[x]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  denote the number of eruptions in a year. Then,
+  <inline-formula><alternatives><tex-math><![CDATA[x]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+  can be modeled by a Poisson distribution</p>
+          <p>
+            <styled-content id="eq-poisson-nb-article">
+              <disp-formula>
+                <alternatives>
+                  <tex-math><![CDATA[
+  p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+   \qquad(1)]]></tex-math>
+                  <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mml:mrow>
+                      <mml:mi>p</mml:mi>
+                      <mml:mrow>
+                        <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                        <mml:mi>x</mml:mi>
+                        <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                      </mml:mrow>
+                      <mml:mo>=</mml:mo>
+                      <mml:mfrac>
+                        <mml:mrow>
+                          <mml:msup>
+                            <mml:mi>e</mml:mi>
+                            <mml:mrow>
+                              <mml:mi>−</mml:mi>
+                              <mml:mi>λ</mml:mi>
+                            </mml:mrow>
+                          </mml:msup>
+                          <mml:msup>
+                            <mml:mi>λ</mml:mi>
+                            <mml:mi>x</mml:mi>
+                          </mml:msup>
+                        </mml:mrow>
+                        <mml:mrow>
+                          <mml:mi>x</mml:mi>
+                          <mml:mi>!</mml:mi>
+                        </mml:mrow>
+                      </mml:mfrac>
+                      <mml:mspace width="2.0em"/>
+                      <mml:mrow>
+                        <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                        <mml:mn>1</mml:mn>
+                        <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                      </mml:mrow>
+                    </mml:mrow>
+                  </mml:math>
+                </alternatives>
+              </disp-formula>
+            </styled-content>
+          </p>
+          <p>where <inline-formula><alternatives><tex-math><![CDATA[\lambda]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>λ</mml:mi></mml:math></alternatives></inline-formula>
+  is the rate of eruptions per year. Using
+  <xref alt="Equation 1" rid="eq-poisson-nb-article">Equation 1</xref>, the
+  probability of an eruption in the next <inline-formula><alternatives><tex-math><![CDATA[t]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>t</mml:mi></mml:math></alternatives></inline-formula>
+  years can be calculated.</p>
+        </sec>
+      </sec>
+    </body>
+    <back>
+      <ref-list>
+        <title/>
+        <ref id="ref-knuth84-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Knuth</surname>
+                <given-names>Donald E.</given-names>
+              </name>
+            </person-group>
+            <article-title>Literate programming</article-title>
+            <source>Comput. J.</source>
+            <publisher-name>Oxford University Press, Inc.</publisher-name>
+            <publisher-loc>USA</publisher-loc>
+            <year iso-8601-date="1984-05">1984</year>
+            <month>05</month>
+            <volume>27</volume>
+            <issue>2</issue>
+            <issn>0010-4620</issn>
+            <uri>https://doi.org/10.1093/comjnl/27.2.97</uri>
+            <pub-id pub-id-type="doi">10.1093/comjnl/27.2.97</pub-id>
+            <fpage>97</fpage>
+            <lpage>111</lpage>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </sub-article>
+</article>
