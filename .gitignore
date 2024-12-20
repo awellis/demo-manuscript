@@ -1,3 +1,7 @@
 /env/
 /.quarto/
 .Rproj.user
+*.code-workspace
+
+# MacOS
+.DS_Store
