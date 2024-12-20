@@ -1,0 +1,67 @@
+---
+title: demo-manuscript
+date: 20 December, 2024
+date-format: "DD MMM, YYYY"
+authors:
+  - name: Andrew Ellis
+    corresponding: true
+    roles: writing
+    url: https://github.com/awellis
+    affiliation: Virtual Academy, Bern University of Applied Sciences
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+license: CC BY
+bibliography: references.bib
+---
+
+## Section
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+## Function
+Let's create a Python function to add two floating point numbers. The code will be visible in the `Source: Article Notebook`
+
+```{python}
+def add(x: float, y: float) -> float:
+    z = x + y
+    print(f"The result is: {z}")
+    return z
+```
+
+We can use the function to compute $4+5$ and return the output:
+
+
+```{python}
+z = add(5, 4)
+```
+
+
+## Figure
+Here is a figure:
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Equation
+
+Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+
+$$
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+$$ {#eq-poisson}
+
+where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
