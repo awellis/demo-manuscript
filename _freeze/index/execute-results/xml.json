@@ -1,0 +1,11 @@
+{
+  "hash": "ddcdb42dd525eedb91a85b132b8d6bf3",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: demo-manuscript\ndate: 20 December, 2024\ndate-format: \"DD MMM, YYYY\"\nauthors:\n  - name: Andrew Ellis\n    corresponding: true\n    roles: writing\n    url: https://github.com/awellis\n    affiliation: Virtual Academy, Bern University of Applied Sciences\n    affiliation-url: https://virtuelleakademie.ch\n    orcid: 0000-0002-2788-936X\nlicense: CC BY\nbibliography: references.bib\n---\n\n\n\n\n\n## Section\nThis is a simple placeholder for the manuscript's main document [@knuth84].\n\n## Function\nLet's create a Python function to add two floating point numbers. The code will be visible in the `Source: Article Notebook`\n\n::: {#d298c784 .cell execution_count=1}\n``` {.python .cell-code .hidden}\ndef add(x: float, y: float) -> float:\n    z = x + y\n    print(f\"The result is: {z}\")\n    return z\n```\n:::\n\n\n:::{#d9cbe0a5 .cell .markdown}\nWe can use the function to compute $4+5$ and return the output:\n:::\n\n::: {#a2dc470a .cell execution_count=2}\n``` {.python .cell-code .hidden}\nz = add(5, 4)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nThe result is: 9\n```\n:::\n:::\n\n\n:::{#db8edc59 .cell .markdown}\n## Figure\nHere is a figure:\n:::\n\n::: {#cell-fig-polar .cell execution_count=3}\n``` {.python .cell-code .hidden}\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![A line plot on a polar axis](index_files/figure-jats/fig-polar-output-1.png){#fig-polar}\n:::\n:::\n\n\n:::{#2b39b4ab .cell .markdown}\n## Equation\n\nLet $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution\n\n$$\np(x) = \\frac{e^{-\\lambda} \\lambda^{x}}{x !}\n$$ {#eq-poisson}\n\nwhere $\\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.\n:::\n\n",
+    "supporting": [
+      "index_files/figure-jats"
+    ],
+    "filters": []
+  }
+}
